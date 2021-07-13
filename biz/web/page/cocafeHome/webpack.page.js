@@ -10,7 +10,8 @@ module.exports = {
             'webCocafeHomeConstants': `${path.resolve(__dirname, 'static/module/config/index.ts')}`,
             'webCocafeHomeGlobalConf': `${path.resolve(__dirname, 'static/global/index.ts')}`,
             'webCocafeHomeAjax': `${path.resolve(__dirname, process.env.NODE_ENV == "production" ? 'static/module/ajax/prod.ts' : 'static/module/ajax/dev.ts')}`,
-            'webCocafeHomeRenderRoutes': `${path.resolve(__dirname, 'static/module/renderRoutes.tsx')}`
+            'webCocafeHomeRenderRoutes': `${path.resolve(__dirname, 'static/module/renderRoutes.tsx')}`,
+            'webCocafeHomeLayoutCmp': `${path.resolve(__dirname, 'routes/layout/index.tsx')}`
         }
     },
     plugins: [
