@@ -8,7 +8,7 @@ import enUs from 'antd/es/locale/en_US';
 loadGlobalVar();
 
 type AppProps = {
-    history?: any
+
 }
 
 export default class App extends React.Component<AppProps, {}> {

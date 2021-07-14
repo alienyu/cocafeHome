@@ -8,12 +8,12 @@ const bizLayout = (WrappedComponent: any) => {
     return (props) => {
         return (
             <Layout>
-                <Header style={{ position: 'fixed', zIndex: 1, width: '100%'}}>
+                <Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 32px', height: '80px', backgroundColor: 'rgba(0,0,0,0)'}}>
                     <CocafeHomeHeader />
                 </Header>
-                <Layout style={{ minHeight: `calc(100vh - 64px)`}}>
+                <Layout style={{ minHeight: `100vh`}}>
                     <Layout>
-                        <Content style={{padding:'94px 30px 30px 310px',backgroundColor:"#fff"}}>
+                        <Content>
                             <WrappedComponent {...props} />
                         </Content>
                     </Layout>

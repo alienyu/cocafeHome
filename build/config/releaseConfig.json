@@ -1,8 +1,8 @@
 {
-  "projectName": "trisa",
+  "projectName": "cocafeHome",
   "deployContent": {
     "web": [
-      "trisa"
+      "cocafeHome"
     ]
   },
   "ver": "release.0.7.0.0.5-(07/03 11:25)"
