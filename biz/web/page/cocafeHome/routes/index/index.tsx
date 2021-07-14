@@ -293,7 +293,7 @@ export default class Index extends React.Component<any, any> {
                             <p>cocafe是国内领先的NFT数字资产服务商</p>
                             <p>致力于为创作者和企业提供领先的NFT数字资产创作发行服务，打造引领未来的数字收藏平台。</p>
                         </div>
-                        <Row className="contentBox" justify="center">
+                        <Row className="contentBox" justify="space-between">
                             <Col span={7} className="eachBox">
                                 <img className="icon develop" src={developPic} />
                                 完整的NFT技术开发能⼒， 成熟市场经验、丰富头部圈内外艺术家、潮流IP和藏家资源
