@@ -5,6 +5,7 @@ const moreImg = require("@webCocafeHomeImgs/more.png");
 const insititutionBG = require("@webCocafeHomeImgs/insititutionBG.png");
 const artistBG = require("@webCocafeHomeImgs/artistBG.png");
 const ecologyBG = require("@webCocafeHomeImgs/ecologyBG.png");
+const mailPic = require("@webCocafeHomeImgs/mail.png");
 
 const WrapperIndexCmp = styled.div`
     .banner {
@@ -111,7 +112,19 @@ const WrapperIndexCmp = styled.div`
                         background-color: rgba(250,250,250,0);
                         &.insititution {
                             background: url(${insititutionBG}) rgba(250, 250, 250, 0) no-repeat 38px 40px;
-                            &.active {
+                            &.active, &:hover {
+                                background-color: rgba(250,250,250,1);
+                            }
+                        }
+                        &.artist {
+                            background: url(${artistBG}) rgba(250, 250, 250, 0) no-repeat 38px 40px;
+                            &.active, &:hover {
+                                background-color: rgba(250,250,250,1);
+                            }
+                        }
+                        &.ecology {
+                            background: url(${ecologyBG}) rgba(250, 250, 250, 0) no-repeat 38px 40px;
+                            &.active, &:hover {
                                 background-color: rgba(250,250,250,1);
                             }
                         }
@@ -129,23 +142,178 @@ const WrapperIndexCmp = styled.div`
                 }
                 .detailFrame {
                     background: rgba(250, 250, 250, 1);
-                    padding: 64px 44px;
+                    padding: 64px 44px 0px 44px;
+                    height: 516px;
                     .line {
                         border-top: 1px solid #333;
                         margin-bottom: 16px;
+                        width: 231px;
                     }
                     .content {
-                        color: #000;
-                        font-size: 14px;
                         padding-left: 15px;
+                        margin-bottom: 74px;
                         li {
-                            list-style: none;
+                            font-size: 25px;
+                            height: 22px;
+                            line-height: 22px;
+                            list-style: none; 
                             &:first-child { 
                                 list-style: square; 
+                            }
+                            a {
+                                display: inline-block;
+                                font-size: 14px;
+                                color: #000;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    .whatFrame {
+        width: 100%;
+        height: 620px;
+        background: #fff;
+        .whatBox {
+            width: 1040px;
+            img {
+                width: 500px;
+                height: 420px;
+            }
+            .title {
+                font-size: 40px;
+                color: #333;
+                margin-bottom: 32px;
+            }
+            .line {
+                border-bottom: 1px solid #000;
+                margin-bottom: 32px;
+            }
+            .content {
+                font-size: 16px;
+                margin-bottom: 32px;
+                color: #666;
+            }
+            .btn {
+                display: inline-block;
+                background: #333;
+                color: #fff;
+                height: 48px;
+                line-height: 48px;
+                width: 230px;
+                text-align: center;
+                margin-top: 32px;
+            }
+        }
+    }
+    .aboutFrame {
+        width: 100%;
+        height: 704px;
+        background: #fff;
+        .aboutBox {
+            width: 1040px;
+            .title {
+                width 100%;
+                text-align: center;
+                font-size: 40px;
+                color: #333;
+                margin-bottom: 48px;
+            }
+            .mainDesc {
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 88px;
+                p { margin-bottom: 0px; }
+            }
+            .contentBox {
+                .eachBox {
+                    position: relative;
+                    width: 320px;
+                    height: 176px;
+                    padding: 64px 40px 0px 40px;
+                    border: 1px solid #000;
+                    margin-right: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    &:last-child { margin-right: 0px; }
+                    .icon {
+                        position: absolute;
+                        top: -42px;
+                        left: 100px;
+                        width: 106px;
+                        height: 83px;
+                        background: #fff;
+                    }
+                }
+            }
+            .more {
+                width: 100%;
+                margin-top: 48px;
+                a {
+                    display: inline-block;
+                    background: #333;
+                    color: #fff;
+                    height: 48px;
+                    line-height: 48px;
+                    width: 230px;
+                    text-align: center;
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+    .mailBox {
+        position: fixed;
+        right: 10px;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        background: url(${mailPic}) no-repeat;
+        cursor: pointer;
+        .contentFrame {
+            position: absolute;
+            display: none;
+            top: -35px;
+            right: 60px;
+            width: 267px;
+            height: 134px;
+            &.show {
+                display: block;
+            }
+            .left {
+                float: left;
+                width: 257px;
+                height: 134px;
+                border-top: 3px solid #333;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+                .mailAddress {
+                    color: #333;
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .btnFrame {
+                    width: 100%;
+                    margin-left: 135px;
+                    a {
+                        display: inline-block;
+                        background: #333;
+                        color: #fff;
+                        height: 32px;
+                        line-height: 32px;
+                        width: 80px;
+                        text-align: center;
+                    }
+                }
+            }
+            .right {
+                float: left;
+                width: 10px;
+                height: 134px;
             }
         }
     }
