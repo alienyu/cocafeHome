@@ -9,6 +9,7 @@ const WrapperHeaderCmp = styled.div`
                 font-size: 32px;
                 color: #fff
                 line-height: 80px;
+                cursor: pointer;
             }
             .menu {
                 .link {
@@ -39,6 +40,7 @@ const WrapperHeaderCmp = styled.div`
                 font-size: 32px;
                 color: #333
                 line-height: 80px;
+                cursor: pointer;
             }
             .menu {
                 .link {

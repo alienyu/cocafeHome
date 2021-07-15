@@ -2,6 +2,9 @@ module.exports = [{
     path: "activity",
     layout: true
 }, {
+    path: "activityDetail",
+    layout: true
+}, {
     path: "cooperate",
     layout: true
 }, {

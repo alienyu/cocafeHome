@@ -23,6 +23,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
 
 
     componentDidMount() {
+        document.documentElement.scrollTop = 0;
         let that = this;
         
         if(that.props.location.pathname == "/") { 
@@ -44,11 +45,15 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
         this.props.history.push(link);
     }
 
+    goHome = () => {
+        this.props.history.push("/");
+    }
+
     render() {
         return (
             <WrapperHeaderCmp>
                 <Row className={this.state.headerBG}>
-                    <Col span={12} className="title">cocafe</Col>
+                    <Col span={12} className="title" onClick={this.goHome}>cocafe</Col>
                     <Col span={12} className="menu">
                         <Row justify="space-around">
                             <Col span={4} className="link" onClick={this.goLink.bind(this, "activity")}>活动</Col>
