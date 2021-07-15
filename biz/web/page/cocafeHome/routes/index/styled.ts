@@ -87,7 +87,6 @@ const WrapperIndexCmp = styled.div`
         }
     }
     .cooperateFrame {
-        marign-top: 120px;
         width: 100%;
         height: 812px;
         background: #fff;
