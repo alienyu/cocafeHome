@@ -118,7 +118,7 @@ export default class Index extends React.Component<any, any> {
                                 </div>
                             </Col>
                             {this.state.cooperateIndex == 1 ?
-                                <Col span={14} className="detailFrame">
+                                <Col span={14} className="detailFrame cooperate">
                                     <Row>
                                         <Col span={12}>
                                             <div className="line"></div>
@@ -168,104 +168,37 @@ export default class Index extends React.Component<any, any> {
                                         </Col>
                                     </Row>
                                 </Col> : this.state.cooperateIndex == 2 ?
-                                <Col span={14} className="detailFrame">
-                                    <Row>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>2助力企业发行NFT艺术品</a></li>
-                                                <li><a>2获取新市场和新世代粉丝</a></li>
-                                                <li><a>焕新品牌</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>提供丰富设计资源</a></li>
-                                                <li><a>和签约艺术家打造NFT的</a></li>
-                                                <li><a>内容创作</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>提供专业产品与技术团队</a></li>
-                                                <li><a>打磨NFT的发行项目和一级售卖</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>运用专业技术手段</a></li>
-                                                <li><a>融合多机制玩法和人机交互</a></li>
-                                                <li><a>丰富NFT项目内涵</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>拥有元宇宙地产资源和开发能力</a></li>
-                                                <li><a>搭建虚拟展馆并提供游戏性交互</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>帮助B端企业和政府建立 NFT虚</a></li>
-                                                <li><a>拟品牌馆、非遗展厅、城市形象</a></li>
-                                                <li><a>馆等</a></li>
-                                            </ul>
-                                        </Col>
-                                    </Row>
+                                <Col span={14} className="detailFrame artist">
+                                    <ul>
+                                        <li><a href="javascript:;">NFT艺术家经纪和代理，推荐拍卖行和海内外交易平台</a></li>
+                                        <li><a href="javascript:;">NFT艺术品创意素材筛选和创作服务</a></li>
+                                        <li><a href="javascript:;">提供人机协同创作的平台，AI算法和技术支持，形成数字作品</a></li>
+                                        <li><a href="javascript:;">艺术品系统精细化定价设计</a></li>
+                                        <li><a href="javascript:;">实物艺术品、收藏品的数字化</a></li>
+                                        <li><a href="javascript:;">Crypto World 和海内外社交媒体品牌打造</a></li>
+                                        <li><a href="javascript:;">组织线上线下活动进行NFT展示和售卖</a></li>
+                                        <li><a href="javascript:;">帮助艺术家建立元宇宙上的虚拟画廊、主题展厅</a></li>
+                                        <li><a href="javascript:;">NFT数字艺术人才培养</a></li>
+                                    </ul>
                                 </Col> :
-                                <Col span={14} className="detailFrame">
+                                <Col span={14} className="detailFrame ecology">
                                     <Row>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>3助力企业发行NFT艺术品</a></li>
-                                                <li><a>3获取新市场和新世代粉丝</a></li>
-                                                <li><a>焕新品牌</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>提供丰富设计资源</a></li>
-                                                <li><a>和签约艺术家打造NFT的</a></li>
-                                                <li><a>内容创作</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>提供专业产品与技术团队</a></li>
-                                                <li><a>打磨NFT的发行项目和一级售卖</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>运用专业技术手段</a></li>
-                                                <li><a>融合多机制玩法和人机交互</a></li>
-                                                <li><a>丰富NFT项目内涵</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>拥有元宇宙地产资源和开发能力</a></li>
-                                                <li><a>搭建虚拟展馆并提供游戏性交互</a></li>
-                                            </ul>
-                                        </Col>
-                                        <Col span={12}>
-                                            <div className="line"></div>
-                                            <ul className="content">
-                                                <li><a>帮助B端企业和政府建立 NFT虚</a></li>
-                                                <li><a>拟品牌馆、非遗展厅、城市形象</a></li>
-                                                <li><a>馆等</a></li>
-                                            </ul>
-                                        </Col>
+                                        <ul className="partOne">
+                                            <li><a href="javascript:;">完整的生态串联能力（Ecosystem）</a></li>
+                                            <li><a href="javascript:;">公链 （conflux树图 , wechain 唯链 等）</a></li>
+                                        </ul>
+                                        <div className="line"></div>
+                                        <ul className="list">
+                                            <li><a href="javascript:;">B端企业客户</a></li>
+                                            <li><a href="javascript:;">拍卖行</a></li>
+                                            <li><a href="javascript:;">艺术家</a></li>
+                                            <li><a href="javascript:;">艺术画廊</a></li>
+                                            <li><a href="javascript:;">收藏夹、玩家</a></li>
+                                            <li><a href="javascript:;">线上加密艺术市场</a></li>
+                                            <li><a href="javascript:;">高净值人群</a></li>
+                                            <li><a href="javascript:;">元宇宙</a></li>
+                                            <li><a href="javascript:;">文娱潮玩消费者</a></li>
+                                        </ul>
                                     </Row>
                                 </Col>
                             }

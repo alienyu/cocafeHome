@@ -144,26 +144,75 @@ const WrapperIndexCmp = styled.div`
                     background: rgba(250, 250, 250, 1);
                     padding: 64px 44px 0px 44px;
                     height: 516px;
-                    .line {
-                        border-top: 1px solid #333;
-                        margin-bottom: 16px;
-                        width: 231px;
+                    &.cooperate {
+                        .line {
+                            border-top: 1px solid #333;
+                            margin-bottom: 16px;
+                            width: 231px;
+                        }
+                        .content {
+                            padding-left: 15px;
+                            margin-bottom: 74px;
+                            li {
+                                font-size: 25px;
+                                height: 22px;
+                                line-height: 22px;
+                                list-style: none; 
+                                &:first-child { 
+                                    list-style: square; 
+                                }
+                                a {
+                                    display: inline-block;
+                                    font-size: 14px;
+                                    color: #000;
+                                    cursor: default;
+                                }
+                            }
+                        }
                     }
-                    .content {
-                        padding-left: 15px;
-                        margin-bottom: 74px;
+                    &.artist {
                         li {
                             font-size: 25px;
                             height: 22px;
                             line-height: 22px;
-                            list-style: none; 
-                            &:first-child { 
-                                list-style: square; 
-                            }
+                            list-style: square; 
+                            margin-bottom: 24px;
                             a {
                                 display: inline-block;
                                 font-size: 14px;
                                 color: #000;
+                                cursor: default;
+                            }
+                        }
+                    }
+                    &.ecology {
+                        .partOne {
+                            padding-left: 20px;
+                        }
+                        .line {
+                            width: 100%;
+                            border-top: 1px solid #333;
+                            margin: 96px 0px 48px 0px;
+                        }
+                        .list {
+                            padding-left: 20px;
+                            margin-bottom: 16px;
+                            li {
+                                width: 50%;
+                                float: left;
+                            }
+                        }
+                        li {
+                            font-size: 25px;
+                            height: 22px;
+                            line-height: 22px;
+                            list-style: square; 
+                            margin-bottom: 16px;
+                            a {
+                                display: inline-block;
+                                font-size: 14px;
+                                color: #000;
+                                cursor: default;
                             }
                         }
                     }
