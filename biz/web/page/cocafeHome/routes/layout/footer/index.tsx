@@ -2,6 +2,8 @@ import * as React from "react";
 import { Row, Col } from 'antd';
 import { WrapperFooterCmp } from './styled';
 
+const logoslogan = require("@webCocafeHomeImgs/logoslogan.png");
+
 type FooterProps = {
 }
 
@@ -19,8 +21,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                 <Row className="footerFrame" justify="center" align="middle">
                     <Row className="footerBox">
                         <Col span={5} className="logoFrame">
-                            <div className="logo">cocafe</div>
-                            <div className="desc">Crypto art future enlightenment</div>
+                            <img src={logoslogan} />
                         </Col>
                         <Col span={17} offset={2}>
                             <Row justify="space-around">
@@ -42,13 +43,13 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                                         <Col span={4} className="weibo"></Col>
                                         <Col span={4} className="wx"></Col>
                                     </Row>
+                                    <div className="contact">联系方式：nft@cocafe.co</div>
                                 </Col>
                             </Row>
                             <div className="line"></div>
-                            <Row justify="space-around">
-                                <Col span={8}></Col>
-                                <Col span={6} offset={3}></Col>
-                                <Col span={6} offset={1}></Col>
+                            <Row justify="space-between" className="auth">
+                                <Col span={8}>© 2020-2021 cocafe. All Rights Reserved.</Col>
+                                <Col span={6} className="icp">沪ICP备00000000号</Col>
                             </Row>
                         </Col>
                     </Row>

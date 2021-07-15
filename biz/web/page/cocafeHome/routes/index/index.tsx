@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { WrapperIndexCmp } from './styled';
 import { Row, Col } from 'antd';
 
+const slogan = require("@webCocafeHomeImgs/slogan.png");
 const activityPic = require("@webCocafeHomeImgs/activityPic.jpg");
 const whatPic = require("@webCocafeHomeImgs/what.png");
 const developPic = require("@webCocafeHomeImgs/develop.png");
@@ -57,8 +58,7 @@ export default class Index extends React.Component<any, any> {
             <WrapperIndexCmp>
                 <Row className="banner" justify="center" align="middle">
                     <Col>
-                        <p className="text1">CRYPTO ART</p>
-                        <p className="text2">FUTURE ENLIGHTENMENT</p>
+                        <img src={slogan} />
                     </Col>
                 </Row>
                 <Row className="activityFrame" justify="center" align="middle">

@@ -52,6 +52,25 @@ const WrapperFooterCmp = styled.div`
                     }
                 }
             }
+            .contact {
+                margin-top: 28px;
+                font-size: 14px;
+                text-align: right;
+                padding-right: 10px;
+                opacity: 0.8;
+            }
+            .line {
+                border-top: 1px solid #fff;
+                margin-top: 16px;
+                opacity: 0.1;
+            }
+            .auth {
+                opacity: 0.6;
+                margin-top: 16px;
+                .icp {
+                    text-align: right;
+                }
+            }
         }
     }
 `;
