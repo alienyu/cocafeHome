@@ -1,7 +1,8 @@
 .idea/
 node_modules/
 dist/
-trisa-output
+cocafeHome-output
+cocafeHome-output.zip
 build/config/devConfig.json
 biz/common/modules/antdIcons.js
 tsconfig.json
