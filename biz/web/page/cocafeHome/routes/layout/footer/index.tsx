@@ -1,21 +1,19 @@
 import * as React from "react";
 import { Row, Col } from 'antd';
 import { WrapperFooterCmp } from './styled';
+import { withRouter } from 'react-router-dom';
 
 const logoslogan = require("@webCocafeHomeImgs/logoslogan.png");
 
-type FooterProps = {
-}
-
-type FooterState = {
-}
-
-export default class Footer extends React.Component<FooterProps, FooterState> {
-    constructor(props: FooterProps) {
+@(withRouter as any)
+export default class Footer extends React.Component<any, any> {
+    constructor(props: any) {
         super(props);
     }
 
     render() {
+        let history = this.props.history;
+
         return (
             <WrapperFooterCmp>
                 <Row className="footerFrame" justify="center" align="middle">
@@ -27,12 +25,12 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
                             <Row justify="space-around">
                                 <Col span={16} className="linkFrame">
                                     <Row justify="start">
-                                        <Col span={12}>活动</Col>
-                                        <Col span={12}>法律声明</Col>
-                                        <Col span={12}>合作</Col>
+                                        <Col span={12} onClick={() => history.push("/activity")}>活动</Col>
+                                        <Col span={12} onClick={() => history.push("/activity")}>法律声明</Col>
+                                        <Col span={12} onClick={() => history.push("/cooperate")}>合作</Col>
                                         <Col span={12}>隐私政策</Col>
-                                        <Col span={12}>Q&A</Col><Col span={12}></Col>
-                                        <Col span={12}>关于我们</Col>
+                                        <Col span={12} onClick={() => history.push("/qa")}>Q&A</Col><Col span={12}></Col>
+                                        <Col span={12} onClick={() => history.push("/about")}>关于我们</Col>
                                     </Row>
                                 </Col>
                                 <Col span={8}>
