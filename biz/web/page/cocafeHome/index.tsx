@@ -22,7 +22,7 @@ export default class App extends React.Component<AppProps, {}> {
     render() {
         return (
             <ConfigProvider locale={enUs}>
-                <Router basename={window.deployConf.ver ? "/cocafeHome" : "/web/cocafeHome"}>
+                <Router basename={window.deployConf.ver ? "/" : "/web/cocafeHome"}>
                     {webCocafeHomeRenderRoutes(webCocafeHomeConstants.routes)}
                 </Router>
             </ConfigProvider>
